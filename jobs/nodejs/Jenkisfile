@@ -1,0 +1,14 @@
+pipeline {
+    agent any
+	
+    stages {
+        stage('build nodejs') {
+            steps {
+                script {
+                sh "npm start"
+                    
+                }
+            }
+        }
+    }
+}
