@@ -5,8 +5,11 @@ pipeline {
         stage('build nodejs') {
             steps {
                 script {
-                sh "npm start"
-                    
+                sh """
+	          npm install express		
+		  npm start
+                  """
+		    
                 }
             }
         }
